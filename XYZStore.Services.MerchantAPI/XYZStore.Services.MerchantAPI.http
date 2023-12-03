@@ -1,0 +1,6 @@
+@XYZStore.Services.MerchantAPI_HostAddress = http://localhost:5187
+
+GET {{XYZStore.Services.MerchantAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,106 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/customer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/customer",
+      "UpstreamHttpMethod": [ "Get", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/customer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/customer/{id}",
+      "UpstreamHttpMethod": [ "Get", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/coupon",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/coupon",
+      "UpstreamHttpMethod": [ "Get", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/coupon",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/coupon/{id}",
+      "UpstreamHttpMethod": [ "Get", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/merchant",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/merchant",
+      "UpstreamHttpMethod": [ "Get", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/merchant",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/merchant/{id}",
+      "UpstreamHttpMethod": [ "Get", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/product",
+      "UpstreamHttpMethod": [ "Get", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/product/{id}",
+      "UpstreamHttpMethod": [ "Get", "DELETE" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7004"
+  }
+}

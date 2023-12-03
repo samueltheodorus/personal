@@ -1,0 +1,6 @@
+@XYZStore.Services.CustomersAPI_HostAddress = http://localhost:5294
+
+GET {{XYZStore.Services.CustomersAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
